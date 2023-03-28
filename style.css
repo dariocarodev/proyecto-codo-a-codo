@@ -1,3 +1,9 @@
-body {
+html {
+    box-sizing: border-box;
     text-decoration: none;
 }
+
+a {
+    color:white;
+    
+    }
