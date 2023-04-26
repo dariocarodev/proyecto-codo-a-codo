@@ -1,30 +1,46 @@
-html {
-    box-sizing: border-box;
-    text-decoration: none;
-}
+
 
 a {
     color:white;
     
     }
-.contenedor{
-        position: relative;
-        display: inline-block;
-        
-}
 
-.img-pos {
-    width: 100%;
-}
+.img-fondo {
+        height: 60rem;
+        background-image: url("../img/ba1.jpg");
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        background-position: center ;
+        background-size: cover;       
+    }
 
 .texto{
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    text-align: right;
+    width:50%;
+    padding: 1.2rem;
+    flex-direction:column;
 }
+.btn-success {
+    background-color: #8BC34A;
+    border-color: #8BC34A;
+}
+
+
+.form{
+    height: 100vh;
+}
+
+#js{
+    color:black;    
+}
+
+footer {
+    background-color: #1E4F6D;
+    color: white;
+    
+}
+
+li {
+    margin-bottom: 1rem; /* Esto agrega un margen inferior de tamaño 3 (1rem x 3 = 3rem) */
+  }
+
+
