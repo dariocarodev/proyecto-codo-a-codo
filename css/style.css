@@ -39,8 +39,16 @@ footer {
     
 }
 
+/* Esto agrega un margen inferior de tamaño 3 (1rem x 3 = 3rem) */
 li {
-    margin-bottom: 1rem; /* Esto agrega un margen inferior de tamaño 3 (1rem x 3 = 3rem) */
-  }
+    margin-bottom: 1rem; 
+}
 
+.card{
+    border-color: rgb(59, 139, 214);
+}
+
+.card:hover {
+    border-color: orange;
+}
 
