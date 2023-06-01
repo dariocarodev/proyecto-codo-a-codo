@@ -1,5 +1,4 @@
 
-
 function resumen() {
     var cantidadInput = document.getElementById("cantidad");
     var totalInput = document.getElementById("total");
@@ -7,14 +6,21 @@ function resumen() {
     var cantidad = parseFloat(cantidadInput.value);
     var selectedCard = document.querySelector(".card-selected");
 
+    if (cantidad <= 0 || isNaN(cantidad)) {
+        alert("Debe seleccionar una cantidad válida");
+        cantidadInput.focus();
+    }
+
     if (selectedCard) {
         var value = parseFloat(selectedCard.getAttribute("data-value"));
         var total = cantidad * 200 * value;
         totalInput.value = "Total a Pagar: $" + total.toFixed(2);
     } else {
-        totalInput.value = "Total a Pagar: $0.00";
+        var total = cantidad * 200;
+        totalInput.value = "Total a Pagar: $" + total.toFixed(2);
     }
 }
+
 
 function selectCard(card) {
     // Obtener todos los elementos card
