@@ -40,3 +40,13 @@ function selectCard(card) {
 }
 
 
+function validarCantidad() {
+    var cantidadInput = document.getElementById("cantidad");
+    var cantidad = cantidadInput.value.trim();
+
+    // Eliminar caracteres no numéricos
+    cantidad = cantidad.replace(/\D/g, '');
+
+    // Asignar el nuevo valor al input
+    cantidadInput.value = cantidad;
+}
