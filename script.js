@@ -56,3 +56,15 @@ function validarCantidad() {
     // Asignar el nuevo valor al input
     cantidadInput.value = cantidad;
 }
+
+
+
+function redireccionar() {
+    // Redirige a otro archivo HTML dentro del sitio web
+    window.location.href = 'compra.html';
+}
+
+function redireccionarOrador() {
+    // Redirige a otro archivo HTML dentro del sitio web
+    window.location.href = '#convierteEnOrador';
+}
